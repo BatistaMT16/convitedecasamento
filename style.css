@@ -10,26 +10,28 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 10px;
+    min-height: 100vh;
 }
 
 /* Card principal */
 .convite {
-    max-width: 460px;
+    width: 100%;
+    max-width: 360px;
     margin: auto;
 
     background-image:
-      linear-gradient(rgba(255,248,243,0.65), rgba(255,248,243,0.65)),
+      linear-gradient(rgba(255,248,243,0.70), rgba(255,248,243,0.70)),
       url("img/coracao.png");
 
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 500px auto;
+    background-size: 260px auto;
 
-    padding: 40px 25px 30px 25px;
+    padding: 25px 18px 22px 18px;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Textos */
@@ -42,56 +44,56 @@ body {
 }
 
 .versiculo {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 .bencao {
-    margin-top: 14px;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 11px;
     letter-spacing: 1px;
 }
 
 .nomes {
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 36px;
     color: #7b4a2d;
-    margin: 15px 0;
-    line-height: 1.1;
+    margin: 10px 0;
+    line-height: 1.05;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.12);
 }
 
 .texto {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 12px;
+    margin: 8px 0;
 }
 
 .data {
-    font-size: 18px;
-    margin: 12px 0;
+    font-size: 15px;
+    margin: 8px 0;
     color: #7a4b2e;
 }
 
 .local {
-    font-size: 13px;
-    margin-bottom: 18px;
+    font-size: 11px;
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 /* Ícones */
 .icones {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    margin-top: 18px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 14px;
 }
 
 .icone {
-    flex: 1 1 30%;
     background: #9c6b4a;
     color: #fff;
-    border-radius: 55px;
-    padding: 12px;
-    font-size: 22px;
+    border-radius: 35px;
+    padding: 8px;
+    font-size: 18px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -101,34 +103,29 @@ body {
 }
 
 .icone span {
-    font-size: 10px;
-    margin-top: 6px;
+    font-size: 8px;
+    margin-top: 3px;
 }
 
 .icone:hover {
     background: #7b4f32;
-    transform: scale(1.07);
+    transform: scale(1.04);
 }
 
 /* Texto inferior */
 .toque {
-    font-size: 11px;
-    margin-top: 8px;
+    font-size: 10px;
+    margin-top: 6px;
 }
 
-/* Responsivo */
-@media (max-width: 400px) {
-    .nomes { font-size: 42px; }
-    .data { font-size: 16px; }
-    .versiculo { font-size: 13px; }
-
-    .convite {
-        background-size: 180px auto;
-        padding: 60px 20px 25px 20px;
+/* Telas muito pequenas */
+@media (max-width: 360px) {
+    .nomes {
+        font-size: 32px;
     }
 
-    .icone {
-        font-size: 20px;
-        padding: 10px;
+    .convite {
+        background-size: 200px auto;
+        padding: 20px 14px 18px 14px;
     }
 }
